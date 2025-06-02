@@ -1,0 +1,107 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+/* Títulos */
+h1 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: #cccccc;
+  font-size: 1.2rem;
+}
+
+/* Container do formulário */
+.container {
+  background-color: #1e1e1e;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Formulário e campos */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+select {
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #333;
+  border-radius: 6px;
+  background-color: #2a2a2a;
+  color: #fff;
+  transition: border 0.3s, background 0.3s;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+input:focus,
+select:focus {
+  border-color: #4a90e2;
+  outline: none;
+  background-color: #333;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  color: #bbb;
+  font-size: 0.9rem;
+}
+
+/* Botão */
+button {
+  padding: 0.9rem;
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #357ABD;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+}
